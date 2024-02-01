@@ -25,6 +25,9 @@ import { asyncErrorHandler, Response, Error } from "async-handler";
 
 const app = express();
 
+// Error middleware for asyncErrorHandler to work
+app.use(error);
+
 // Example route with asyncErrorHandler
 app.get(
   "/name",
