@@ -1,8 +1,8 @@
-# `async-handler`
+# `express-error-catcher`
 
-The `async-handler` npm package provides a convenient solution for managing async/await errors in Node.js Express applications. The package is designed with simplicity in mind. Below are instructions on how to integrate and utilize `async-handler` in your projects.
+The `express-error-catcher` npm package provides a convenient solution for managing async/await errors in Node.js Express applications. The package is designed with simplicity in mind. Below are instructions on how to integrate and utilize `express-error-catcher` in your projects.
 
-## Why Use `async-handler`?
+## Why Use `express-error-catcher`?
 
 - Elimination of the need for extensive try-catch blocks in your asynchronous code.
 - You can keep your route handlers clean and free from error-handling clutter.
@@ -11,17 +11,22 @@ The `async-handler` npm package provides a convenient solution for managing asyn
 
 ## Installation
 
-To install `async-handler`, use the following npm command:
+To install `express-error-catcher`, use the following npm command:
 
 ```bash
-npm install async-handler
+npm install express-error-catcher
 ```
 
 ## Example
 
 ```js
 import express from "express";
-import { asyncErrorHandler, Response, Error } from "async-handler";
+import {
+  asyncErrorHandler,
+  error,
+  Response,
+  Error,
+} from "express-error-catcher";
 
 const app = express();
 
