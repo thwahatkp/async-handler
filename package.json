@@ -1,11 +1,12 @@
 {
-  "name": "async-handler",
-  "version": "1.0.0",
+  "name": "express-error-catcher",
+  "version": "1.0.1",
   "description": "async error handler",
-  "main": "./build/cjs/index.js",
-  "module": "./build/es/index.js",
+  "main": "./build/index.js",
+  "module": "./build/index.mjs",
+  "types": "./build/index.d.ts",
   "scripts": {
-    "build": "./scripts/build.sh"
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,10 @@
     "error",
     "handling"
   ],
-  "author": "tkp",
+  "author": [
+    "thwahakp",
+    "uvaishassan"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thwahatkp/async-handler/issues"
@@ -34,6 +38,8 @@
     "http-status-codes": "^2.3.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21"
+    "@types/express": "^4.17.21",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
   }
 }

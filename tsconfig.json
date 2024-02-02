@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "es6",
     "strict": true,
+    "noImplicitAny": true,
     "esModuleInterop": true,
+    "strictNullChecks": true,
+    "target": "ES2022",
+    "moduleResolution": "Node10",
+    "module": "CommonJS",
     "declaration": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "moduleResolution": "node"
+    "isolatedModules": true,
+    "noEmit": true
   },
+
   "include": ["./src/**/*"]
 }
